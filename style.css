@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.navbar-nav li,
+.navbar-nav li button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 0.94rem;
+}
+
+.ph-navbar {
+    background-color: #333D5B;
+}
+
+.cart-icon path {
+    fill: white !important;
+}
+
+.ph-navbar-toggler {
+    padding: .20rem .75rem;
+    border-color: #f8f9fa;
+    color: #f8f9fa;
+}
+
+.ph-navbar-toggler:focus,
+.ph-navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    --bs-navbar-toggler-border-color: #7A56AD;
+    --bs-navbar-toggler-focus-width: 0.078rem;
+}
+
+.ph-btn-close-menu {
+    color: #212529;
+}
+
+.ph-navbar-toggler,
+.ph-btn-close-menu {
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+}
+
+.navbar-brand {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.ph-babge-1 {
+    left: 32px !important;
+}
+
+.ph-btn-cart-1 {
+    text-decoration: none !important;
+}
+
+.dropdown-menu {
+    border: none !important;
+    --bs-dropdown-border-color: #EEEEEE;
+    --bs-dropdown-border-radius: 3px;
+    padding: 0.78rem;
+
+}
+
+.dropdown-menu li {
+    line-height: 1.7rem;
+}
+
+.dropdown-menu li a {
+    font-weight: 500;
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+    font-family: "Ionicons";
+    content: "\f123";
+    vertical-align: 0;
+}
+
+@media (max-width: 991px) {
+    .offcanvas-body {
+        padding: 0 30px;
+    }
+
+    .mobile-btn-sigin-outline-dark {
+        --bs-btn-color: #212529;
+        --bs-btn-border-color: #212529;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #212529;
+        --bs-btn-hover-border-color: #212529;
+        --bs-btn-focus-shadow-rgb: 33, 37, 41;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #212529;
+        --bs-btn-active-border-color: #212529;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #212529;
+        --bs-btn-disabled-bg: transparent;
+        --bs-btn-disabled-border-color: #212529;
+        --bs-gradient: none;
+    }
+
+    .dropdown-toggle::after {
+        float: right;
+    }
+
+    .mobile-navbar-nav-1 .nav-item {
+        border-bottom: 1px solid #212529;
+    }
+
+    .mobile-navbar-nav-1 .dropdown-menu {
+        padding: 0px 0px;
+    }
+
+    .mobile-navbar-nav-1 .dropdown-menu li {
+        border-top: 1px solid #212529;
+    }
+
+    .mobile-navbar-nav-1 .nav-item>a {
+        font-size: 16px;
+    }
+
+    .ph-navbar .nav-item a {
+        --bs-nav-link-color: #212529;
+        line-height: 2.0rem;
+    }
+
+    .ph-navbar .nav-item a:hover,
+    .ph-navbar .nav-item a:focus {
+        color: #131415 !important;
+    }
+
+    .ph-btn-cart-1 {
+        color: #131415;
+    }
+
+    .ph-btn-cart-1:hover {
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu-xl-center {
+        left: 50% !important;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0%);
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .ph-navbar .nav-link {
+        color: #f8f9fa;
+    }
+
+    .dropdown-menu::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        width: 17px;
+        height: 17px;
+        background-color: #f8f9fa;
+        -webkit-transform: translate(-50%, 0) rotate(-315deg);
+        transform: translate(-50%, 0) rotate(-315deg);
+        z-index: -1;
+        border-radius: 3px;
+    }
+
+    .ph-btn-cart-1 {
+        color: #f8f9fa;
+    }
+
+    .ph-btn-cart-1:hover {
+        color: #ffffff !important;
+    }
+}
